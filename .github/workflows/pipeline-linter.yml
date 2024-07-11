@@ -1,9 +1,11 @@
 name: Pipeline Linter
 on:
   push:
-    branches: -main
+    branches:
+      - main
   pull_request:
-    branches: -main
+    branches:
+      - main
 jobs:
   Linter:
     runs-on: ubuntu-latest
